@@ -1,26 +1,125 @@
+.nav {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 1;
+    justify-content:space-around;
+    
+    background-color:rgb(34, 34, 31);
+     color: white;
+}
+.nav>* {
+  
+   margin-top: 10px;
+  
+}
+.nav ul {
+    margin-top: 10px;
+     display: flex;
+    justify-content: space-evenly;
+   list-style: none;
+   width: 400px;
+    
+   ;
+}
+nav a {
+  text-decoration: none;
+  color:#ffffff;
+  font-weight: 500;
+  font-size: 22px;
+}
+.nav img {
+    height:50px;
+    width:50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .grid-container {
     justify-content: center;
     row-gap: 5px;
     column-gap: 25px;
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 400px minmax(150px,400px);
-    grid-template-rows: 300px 100px;
+    grid-template-columns:200px 380px minmax(100px,400px);
+    grid-template-rows: 250px 50px;
+    margin-bottom: 45px;
 }
 
-.maincontent {
-border-radius: 10px;
-width:400px;
-height:300px;
-}
-.Description {
-
-grid-row:span 2;
-}
-.othercontent {
-
-}
-
-.carousel {
+.placeholder {
+    grid-row: span 2;
+  
    
+}
+.placeholder {
+      height:150px;
+     width:100px;
+   
+     margin-top: 100px;
+  margin-left: 90px;
+}
+.maincontent {
+  margin-right: 0px;
+
+}
+.maincontent img {
+    width: 300px;
+    height:250px;
+    margin-left: 70px;
+    border-radius: 20px;
+}
+
+
+.Description {
+    Width:200px;
+    padding: 0;
+    grid-row: span 2;
+   
+}
+   h4 {
+        font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+      }
+        .othercontent>* {
+         font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+                  }
+    .Description>* {
+         font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+     
+    }
+.othercontent {
+    margin-left: 70px;
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-color:bisque;
 }
