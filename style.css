@@ -1,0 +1,26 @@
+.grid-container {
+    justify-content: center;
+    row-gap: 5px;
+    column-gap: 25px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 400px minmax(150px,400px);
+    grid-template-rows: 300px 100px;
+}
+
+.maincontent {
+border-radius: 10px;
+width:400px;
+height:300px;
+}
+.Description {
+
+grid-row:span 2;
+}
+.othercontent {
+
+}
+
+.carousel {
+   
+}
