@@ -1,125 +1,172 @@
-.nav {
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    
+    background-color: #FAF3EA;
+}
+.navbar {
     display: flex;
-    flex-grow: 0;
-    flex-shrink: 1;
-    justify-content:space-around;
-    
-    background-color:rgb(34, 34, 31);
-     color: white;
+    justify-content:space-between;
+
+    align-items: center;
+    padding:20px 40px;
+    background-color: #FDF9F4;
+    border-bottom: 2px solid #A02020;
 }
-.nav>* {
-  
-   margin-top: 10px;
-  
+.logo {
+    margin-right: 50px;
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-style: bold;
+    color:#A02020;
+    letter-spacing: 2px;
+    font-family: "Bungee", sans-serif;
 }
-.nav ul {
-    margin-top: 10px;
-     display: flex;
-    justify-content: space-evenly;
-   list-style: none;
-   width: 400px;
-    
-   ;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap:30px;
+   
 }
-nav a {
-  text-decoration: none;
-  color:#ffffff;
-  font-weight: 500;
-  font-size: 22px;
+.nav-links a {
+    text-decoration: none;
+       font-family: "Poppins", sans-serif;
+  font-weight: 550;
+  font-style: normal;
+     transition: color 0.3s ease;
+     color:#A02020;
 }
-.nav img {
-    height:50px;
-    width:50px;
+.nav-links a:hover {
+    color: #A02020;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.grid-container {
-    justify-content: center;
-    row-gap: 5px;
-    column-gap: 25px;
-    margin-top: 20px;
+.gridcontainer {
     display: grid;
-    grid-template-columns:200px 380px minmax(100px,400px);
-    grid-template-rows: 250px 50px;
-    margin-bottom: 45px;
+    grid-template-columns: 40% 40% ;
+    grid-template-rows: minmax(200px,auto);
+    gap: 5%;
+    margin-top:150px;
+    margin-left:10%;
 }
-
-.placeholder {
-    grid-row: span 2;
-  
-   
+ .img {
+    
 }
-.placeholder {
-      height:150px;
-     width:100px;
-   
-     margin-top: 100px;
-  margin-left: 90px;
-}
-.maincontent {
-  margin-right: 0px;
-
-}
-.maincontent img {
-    width: 300px;
-    height:250px;
-    margin-left: 70px;
+.img img {
+    width:100%;
+    min-height: 300px;
+    max-height: 400px;
+    object-fit: cover;
+    border: 3px solid;
+    border-color: #dc6259;
     border-radius: 20px;
 }
+.maintext {
 
 
-.Description {
-    Width:200px;
-    padding: 0;
-    grid-row: span 2;
-   
 }
-   h4 {
-        font-family: "Bungee", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-      }
-        .othercontent>* {
-         font-family: "Bungee", sans-serif;
+.maintext p {
+    margin-top: 20%;
+    
+    color:#A02020;
+    font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   
-                  }
-    .Description>* {
-         font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-     
+}
+
+.borderone {
+    margin-top: 50px;
+    background-color: #A02020;
+    height: 100px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.borderone h2 {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.album {
+    margin-top:150px;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows:  300px 300px;
+    gap:5%;
+}
+.picone {
+
+}
+.album img {
+    width:100%;
+    
+    max-height:300px;
+     object-fit: cover;
+       border: 3px solid;
+    border-color: #dc6259;
+    border-radius: 20px;
+}
+.pictwo {
+    
+}
+
+.picthree {
+   
+}
+.picfour {
+  
+}
+
+@media (max-width: 600px) {
+
+    
+
+.gridcontainer {
+    padding:0;
+    margin:0;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+}
+.img {
+    
+}
+.img img {
+    width:80%;
+    margin-left:10%;
+
+}
+.gridcontainer p {
+    
+    width:80%;
+    margin-left: 10%;
+    margin-top: 20px;
+    
+}
+
+.borderone h2 {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.album {
+    margin-top:50px;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows:  200px 200px;
+    gap:5%;
+}
+.album img {
+        height:200px;
     }
-.othercontent {
-    margin-left: 70px;
-    margin-top: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-body {
-    background-color:bisque;
-}
